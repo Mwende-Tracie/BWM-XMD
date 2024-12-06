@@ -12,7 +12,7 @@ module.exports = { session: process.env.SESSION_ID || 'BWM-XMD;;;H4sIAAAAAAAAA5V
     OWNER_NAME: process.env.OWNER_NAME || "Ibrahim Adams",
     NUMERO_OWNER : process.env.NUMERO_OWNER || " Ibrahim Adams",              
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
-    AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'no',
+    AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'yes',
     BOT : process.env.BOT_NAME || 'BMW_MD',
     URL : process.env.BOT_MENU_LINKS || 'https://files.catbox.moe/h2ydge.jpg',
     MODE: process.env.PUBLIC_MODE || "yes",
@@ -20,8 +20,8 @@ module.exports = { session: process.env.SESSION_ID || 'BWM-XMD;;;H4sIAAAAAAAAA5V
     HEROKU_APP_NAME : process.env.HEROKU_APP_NAME,
     HEROKU_APY_KEY : process.env.HEROKU_APY_KEY ,
     WARN_COUNT : process.env.WARN_COUNT || '3' ,
-    ETAT : process.env.PRESENCE || '',
-    CHATBOT : process.env.PM_CHATBOT || 'no',
+    ETAT : process.env.PRESENCE || 'yes',
+    CHATBOT : process.env.PM_CHATBOT || 'yes',
     DP : process.env.STARTING_BOT_MESSAGE || "yes",
     ANTIDELETE1 : process.env.ANTIDELETE1 || 'yes',
     ANTIDELETE2 : process.env.ANTIDELETE2 || 'yes',
@@ -35,6 +35,17 @@ module.exports = { session: process.env.SESSION_ID || 'BWM-XMD;;;H4sIAAAAAAAAA5V
                   AUTO_REJECT_CALL : process.env.AUTO_REJECT_CALL || 'yes',
                   AUTO_BIO : process.env.AUTO_BIO || 'yes',
                   AUDIO_REPLY : process.env.AUDIO_REPLY || 'yes',
+                  AUTO_VIEW_STATUS: PROCESS.env.AUTO_READ_STATUS || 'yes',
+    //false=disable and true=enable
+global.welcome = false //auto welcome
+global.autoRecording = true //auto recording
+global.autoTyping = false //auto typing
+global.autorecordtype = false //auto typing + recording
+global.autoread = false //auto read messages
+global.autobio = true /oi9
+    picture update bio
+global.anti212 = true //auto block +212
+global.autoread_status = true //auto view status/story
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
         ? "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway" : "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway",
