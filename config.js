@@ -37,16 +37,6 @@ module.exports = { session: process.env.SESSION_ID || 'BWM-XMD;;;H4sIAAAAAAAAA5V
                   AUTO_BIO : process.env.AUTO_BIO || 'yes',
                   AUDIO_REPLY : process.env.AUDIO_REPLY || 'yes',
                   AUTO_VIEW_STATUS: PROCESS.env.AUTO_READ_STATUS || 'yes',
-    //false=disable and true=enable
-global.welcome = false //auto welcome
-global.autoRecording = true //auto recording
-global.autoTyping = false //auto typing
-global.autorecordtype = false //auto typing + recording
-global.autoread = false //auto read messages
-global.autobio = true /oi9
-    picture update bio
-global.anti212 = true //auto block +212
-global.autoread_status = true //auto view status/story
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
         ? "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway" : "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway",
